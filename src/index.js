@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   newTaskForm.addEventListener("submit", (event) => {
     event.preventDefault();
-
+    console.log("hello");
     const newTaskDescription = document.getElementById("new-task-description");
     const newTask = document.createElement("li");
     newTask.innerText = newTaskDescription.value;
 
-    document.getElementById("tasks").appendChild(task);
+    document.getElementById("tasks").appendChild(newTask);
     event.target.reset();
   });
 });
